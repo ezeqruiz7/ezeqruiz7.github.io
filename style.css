@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #0f0f0f;
+}
+
+body {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#selector {
+  position: fixed;
+
+  top: 60px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 100;
+
+  display: flex;
+  gap: 4px;
+}
+
+#selector button {
+
+  border: 0;
+
+  background: none;
+  color: #ff0000;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+
+  padding: 5px;
+
+  cursor: pointer;
+
+  opacity: 0.35;
+}
+
+#selector button.activo {
+
+  opacity: 1;
+}
+
+#sketch {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+    transform: translateY(40px);
+
+}
+
+canvas {
+
+  display: block;
+
+  border: 5px solid #191815;
+}
+
+#tituloExperiencia {
+  position: fixed;
+
+  top: 10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 100;
+
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+
+  color: #ff0000;
+}
